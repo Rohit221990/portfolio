@@ -61,9 +61,9 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive website front end using React-Redux",
-        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
-        "⚡ Creating application backend in Node, Express & Flask",
+        "⚡ Building responsive website front end using MEAN and MERN Stack.",
+        "⚡ Developing mobile applications using Flutter and React Native.",
+        "⚡ Creating application backend in Node, Express & Flask.",
       ],
       softwareSkills: [
         {
@@ -145,7 +145,7 @@ const skills = {
           },
         },
         {
-          skillName: "webRTC",
+          skillName: "webRTC + Jssip",
           fontAwesomeClassname: "simple-icons:webrtc",
           style: {
             color: "#02569B",
@@ -298,7 +298,7 @@ const degrees = {
       subtitle: "B.Tech. in Computer Engineering",
       duration: "2009 - 2013",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS etc.",
+        "⚡ I have studied software engineering in computer science.",
         "⚡ Apart from this, I have done cources on Networking CCNA",
       ],
     },
@@ -434,7 +434,7 @@ const experience = {
           title: "Associate software Engineer",
           company: "Emids Technology(Health Care)",
           company_url: "",
-          logo_path: "legato_logo.png",
+          logo_path: "emids1.png",
           duration: "Oct2013 - FEB 2016",
           location: "Bangalore, Karnataka",
           description:
@@ -445,7 +445,7 @@ const experience = {
           title: "Software Engineer",
           company: "XCDIFY Solution PVT LTD.(Health Care)",
           company_url: "",
-          logo_path: "muffito_logo.png",
+          logo_path: "xcidify.jpeg",
           duration: "May 2016 - Jul 2018",
           location: "Bangalore, Karnataka",
           description:
@@ -456,8 +456,8 @@ const experience = {
           title: "Sr. Software Engineer",
           company: "First American India(Title Insurance)",
           company_url: "",
-          logo_path: "freecopy_logo.png",
-          duration: "Jul 2018 - Sept 2019",
+          logo_path: "fai.jpeg",
+          duration: "Jul 2018 - Jul 2019",
           location: "Bangalore, Karnataka",
           description:
             "I have worked with title insurance domain, where handled all the property tansaction using hyperledger(Framework) Block chain(Mutual Indemnity Blockchain). Manage all the policies in UI as well as Server side of particular property. Setup IPFS servers and manage swarm connect and clustering between the IPFS nodes.",
@@ -467,24 +467,24 @@ const experience = {
           title: "Lead Software Engineer",
           company: "Zensar Technology(Retail)",
           company_url: "",
-          logo_path: "freecopy_logo.png",
-          duration: "Sept 2019 - Nov 2020",
+          logo_path: "zensar.png",
+          duration: "Jul 2019 - Nov 2020",
           location: "Bangalore, Karnataka",
           description:
             "In Retail Domain Have worked with Aptos Product and mostly handled cloud based implementation. Worked on severless tech using AWS and python. Design a local BE server using Node and handling deploymnet using Docker and Kubernetes.",
           color: "#fc1f20",
         },
-        {
-          title: "Lead Software Engineer",
-          company: "Radisys Technology(Telecom)",
-          company_url: "",
-          logo_path: "freecopy_logo.png",
-          duration: "Sept 2019 - Nov 2020",
-          location: "Bangalore, Karnataka",
-          description:
-            "Radisys is a part of Relience, It enables service providers to become digital experience providers. Providing a end-to-end solution to help service providers build and operate highly scalable, high-performance networks. I have worked on a dashboard portal where Tenant can manage all his services and developed a core of webRTC sdk that can help user to make SIP based calling.",
-          color: "#fc1f20",
-        },
+        // {
+        //   title: "Lead Software Engineer",
+        //   company: "Radisys Technology(Telecom)",
+        //   company_url: "",
+        //   logo_path: "radisys.png",
+        //   duration: "Nov 2019 - Nov 2020",
+        //   location: "Bangalore, Karnataka",
+        //   description:
+        //     "Radisys is a part of Relience, It enables service providers to become digital experience providers. Providing a end-to-end solution to help service providers build and operate highly scalable, high-performance networks. I have worked on a dashboard portal where Tenant can manage all his services and developed a core of webRTC sdk that can help user to make SIP based calling.",
+        //   color: "#fc1f20",
+        // },
       ],
     },
   ],
