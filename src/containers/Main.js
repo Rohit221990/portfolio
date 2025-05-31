@@ -11,8 +11,13 @@ import { settings } from "../portfolio.js";
 import Error404 from "../pages/errors/error404/Error";
 
 export default class Main extends Component {
+  constructor(props) {
+    super(props);
+    this.props = props;
+  }
+
   render() {
-    if (settings.isSplash) {
+    if (settings && settings.isSplash) {
       return (
         <div>
           <HashRouter basename="/">
@@ -77,44 +82,43 @@ export default class Main extends Component {
       );
     } else {
       return (
-        <div>
-          <HashRouter basename="/">
-            <Switch>
-              <Route
-                path="/"
-                exact
-                render={(props) => <Home {...props} theme={this.props.theme} />}
-              />
-              <Route
-                path="/home"
-                render={(props) => <Home {...props} theme={this.props.theme} />}
-              />
-              <Route
-                path="/experience"
-                exact
-                render={(props) => (
-                  <Experience {...props} theme={this.props.theme} />
-                )}
-              />
-              <Route
-                path="/education"
-                render={(props) => (
-                  <Education {...props} theme={this.props.theme} />
-                )}
-              />
-              <Route
-                path="/opensource"
-                render={(props) => (
-                  <Opensource {...props} theme={this.props.theme} />
-                )}
-              />
-              <Route
-                path="/contact"
-                render={(props) => (
-                  <Contact {...props} theme={this.props.theme} />
-                )}
-              />
-              {/* <Route
+        <HashRouter basename="/">
+          <Switch>
+            <Route
+              path="/"
+              exact
+              render={(props) => <Home {...props} theme={this.props.theme} />}
+            />
+            <Route
+              path="/home"
+              render={(props) => <Home {...props} theme={this.props.theme} />}
+            />
+            <Route
+              path="/experience"
+              exact
+              render={(props) => (
+                <Experience {...props} theme={this.props.theme} />
+              )}
+            />
+            <Route
+              path="/education"
+              render={(props) => (
+                <Education {...props} theme={this.props.theme} />
+              )}
+            />
+            <Route
+              path="/opensource"
+              render={(props) => (
+                <Opensource {...props} theme={this.props.theme} />
+              )}
+            />
+            <Route
+              path="/contact"
+              render={(props) => (
+                <Contact {...props} theme={this.props.theme} />
+              )}
+            />
+            {/* <Route
 							path="/splash"
 							render={(props) => (
 								<Splash
@@ -123,15 +127,14 @@ export default class Main extends Component {
 								/>
 							)}
 						/> */}
-              <Route
-                path="/projects"
-                render={(props) => (
-                  <Projects {...props} theme={this.props.theme} />
-                )}
-              />
-            </Switch>
-          </HashRouter>
-        </div>
+            <Route
+              path="/projects"
+              render={(props) => (
+                <Projects {...props} theme={this.props.theme} />
+              )}
+            />
+          </Switch>
+        </HashRouter>
       );
     }
   }

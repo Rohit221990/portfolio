@@ -1,0 +1,1365 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "hello": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "how,you": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "good,morn": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "afternoon,good": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "day,good": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "name": {
+            "intent": "personal",
+            "domain": "default"
+          },
+          "is,name,what,your": {
+            "intent": "personal",
+            "domain": "default"
+          },
+          "is,name,your": {
+            "intent": "personal",
+            "domain": "default"
+          },
+          "about,name,what,you": {
+            "intent": "personal",
+            "domain": "default"
+          },
+          "are,who,you": {
+            "intent": "personal",
+            "domain": "default"
+          },
+          "call,can,i,with,you": {
+            "intent": "personal",
+            "domain": "default"
+          },
+          "are,you": {
+            "intent": "personal",
+            "domain": "default"
+          },
+          "educ,is,what,your": {
+            "intent": "education",
+            "domain": "default"
+          },
+          "educ": {
+            "intent": "education",
+            "domain": "default"
+          },
+          "about,educ,i,know,may,your": {
+            "intent": "education",
+            "domain": "default"
+          },
+          "studi,your": {
+            "intent": "education",
+            "domain": "default"
+          },
+          "studi": {
+            "intent": "education",
+            "domain": "default"
+          },
+          "did,what,you": {
+            "intent": "education",
+            "domain": "default"
+          },
+          "is,skill,what,your": {
+            "intent": "skills",
+            "domain": "default"
+          },
+          "experti,is,what,your": {
+            "intent": "skills",
+            "domain": "default"
+          },
+          "do,know,what,you": {
+            "intent": "skills",
+            "domain": "default"
+          },
+          "tech,your": {
+            "intent": "skills",
+            "domain": "default"
+          },
+          "technolog,your": {
+            "intent": "skills",
+            "domain": "default"
+          },
+          "are,hand,on,tech,what,you": {
+            "intent": "skills",
+            "domain": "default"
+          },
+          "techno": {
+            "intent": "skills",
+            "domain": "default"
+          },
+          "is,tech,what,your": {
+            "intent": "skills",
+            "domain": "default"
+          },
+          "on,tech,what,work,you": {
+            "intent": "skills",
+            "domain": "default"
+          },
+          "about,me,skill,tell,your": {
+            "intent": "skills",
+            "domain": "default"
+          },
+          "about,me,technolog,tell,your": {
+            "intent": "skills",
+            "domain": "default"
+          },
+          "on,technolog,which,work,you": {
+            "intent": "skills",
+            "domain": "default"
+          },
+          "hand,on,tech": {
+            "intent": "skills",
+            "domain": "default"
+          },
+          "experi,is,what,your": {
+            "intent": "experience",
+            "domain": "default"
+          },
+          "domain,experi,is,what,your": {
+            "intent": "experience",
+            "domain": "default"
+          },
+          "where,work,you": {
+            "intent": "experience",
+            "domain": "default"
+          },
+          "about,me,tell,you": {
+            "intent": "experience",
+            "domain": "default"
+          },
+          "domain,experi,your": {
+            "intent": "experience",
+            "domain": "default"
+          },
+          "domain,experi": {
+            "intent": "experience",
+            "domain": "default"
+          },
+          "experi": {
+            "intent": "experience",
+            "domain": "default"
+          },
+          "exp": {
+            "intent": "experience",
+            "domain": "default"
+          },
+          "all,compani,what,work,you": {
+            "intent": "experience",
+            "domain": "default"
+          },
+          "compani,experi": {
+            "intent": "experience",
+            "domain": "default"
+          },
+          "domain": {
+            "intent": "experience",
+            "domain": "default"
+          },
+          "domain,me,tell,your": {
+            "intent": "experience",
+            "domain": "default"
+          },
+          "experi,industri": {
+            "intent": "experience",
+            "domain": "default"
+          },
+          "compani,experi,tech": {
+            "intent": "experience",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greeting": "default",
+          "personal": "default",
+          "education": "default",
+          "skills": "default",
+          "experience": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "how you",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "good morning",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "good afternoon",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "good day",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "name",
+            "intent": "personal"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is your name",
+            "intent": "personal"
+          },
+          {
+            "domain": "default",
+            "utterance": "your name is",
+            "intent": "personal"
+          },
+          {
+            "domain": "default",
+            "utterance": "what about you name",
+            "intent": "personal"
+          },
+          {
+            "domain": "default",
+            "utterance": "who are you",
+            "intent": "personal"
+          },
+          {
+            "domain": "default",
+            "utterance": "I can call you with",
+            "intent": "personal"
+          },
+          {
+            "domain": "default",
+            "utterance": "you are",
+            "intent": "personal"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is your education?",
+            "intent": "education"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is your education",
+            "intent": "education"
+          },
+          {
+            "domain": "default",
+            "utterance": "education",
+            "intent": "education"
+          },
+          {
+            "domain": "default",
+            "utterance": "may I know about your education",
+            "intent": "education"
+          },
+          {
+            "domain": "default",
+            "utterance": "your study",
+            "intent": "education"
+          },
+          {
+            "domain": "default",
+            "utterance": "study",
+            "intent": "education"
+          },
+          {
+            "domain": "default",
+            "utterance": "what you did",
+            "intent": "education"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is your skills?",
+            "intent": "skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is your experties",
+            "intent": "skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "what do you know",
+            "intent": "skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "your tech",
+            "intent": "skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "your technology",
+            "intent": "skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "what tech you are hands on",
+            "intent": "skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "techno",
+            "intent": "skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is your tech?",
+            "intent": "skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "on what tech you worked on",
+            "intent": "skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me about your skills",
+            "intent": "skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me about your technology",
+            "intent": "skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "you worked on which technology",
+            "intent": "skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "on what tech you worked on",
+            "intent": "skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "hands on tech",
+            "intent": "skills"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is your experience?",
+            "intent": "experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is your domain experience",
+            "intent": "experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "Where you worked",
+            "intent": "experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me about you",
+            "intent": "experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "your domain experience",
+            "intent": "experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "domain experience",
+            "intent": "experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "experience",
+            "intent": "experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "exp",
+            "intent": "experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "what all companies you worked",
+            "intent": "experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "company experience",
+            "intent": "experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "domain",
+            "intent": "experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me your domain",
+            "intent": "experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "industry experience",
+            "intent": "experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "tech company experience",
+            "intent": "experience"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "hello": 1,
+              "hi": 1,
+              "how": 1,
+              "you": 1,
+              "hey": 1,
+              "good": 1,
+              "morn": 1,
+              "afternoon": 1,
+              "day": 1,
+              "name": 1,
+              "what": 1,
+              "is": 1,
+              "your": 1,
+              "about": 1,
+              "who": 1,
+              "are": 1,
+              "i": 1,
+              "can": 1,
+              "call": 1,
+              "with": 1,
+              "educ": 1,
+              "may": 1,
+              "know": 1,
+              "studi": 1,
+              "did": 1,
+              "skill": 1,
+              "experti": 1,
+              "do": 1,
+              "tech": 1,
+              "technolog": 1,
+              "hand": 1,
+              "on": 1,
+              "techno": 1,
+              "work": 1,
+              "tell": 1,
+              "me": 1,
+              "which": 1,
+              "experi": 1,
+              "domain": 1,
+              "where": 1,
+              "exp": 1,
+              "all": 1,
+              "compani": 1,
+              "industri": 1
+            },
+            "intents": {
+              "greeting": 1,
+              "personal": 1,
+              "education": 1,
+              "skills": 1,
+              "experience": 1
+            },
+            "intentFeatures": {
+              "greeting": {
+                "hello": 1,
+                "hi": 1,
+                "how": 1,
+                "you": 1,
+                "hey": 1,
+                "good": 1,
+                "morn": 1,
+                "afternoon": 1,
+                "day": 1
+              },
+              "personal": {
+                "name": 1,
+                "what": 1,
+                "is": 1,
+                "your": 1,
+                "about": 1,
+                "you": 1,
+                "who": 1,
+                "are": 1,
+                "i": 1,
+                "can": 1,
+                "call": 1,
+                "with": 1
+              },
+              "education": {
+                "what": 1,
+                "is": 1,
+                "your": 1,
+                "educ": 1,
+                "may": 1,
+                "i": 1,
+                "know": 1,
+                "about": 1,
+                "studi": 1,
+                "you": 1,
+                "did": 1
+              },
+              "skills": {
+                "what": 1,
+                "is": 1,
+                "your": 1,
+                "skill": 1,
+                "experti": 1,
+                "do": 1,
+                "you": 1,
+                "know": 1,
+                "tech": 1,
+                "technolog": 1,
+                "are": 1,
+                "hand": 1,
+                "on": 1,
+                "techno": 1,
+                "work": 1,
+                "tell": 1,
+                "me": 1,
+                "about": 1,
+                "which": 1
+              },
+              "experience": {
+                "what": 1,
+                "is": 1,
+                "your": 1,
+                "experi": 1,
+                "domain": 1,
+                "where": 1,
+                "you": 1,
+                "work": 1,
+                "tell": 1,
+                "me": 1,
+                "about": 1,
+                "exp": 1,
+                "all": 1,
+                "compani": 1,
+                "industri": 1,
+                "tech": 1
+              }
+            },
+            "featuresToIntent": {
+              "hello": [
+                "greeting"
+              ],
+              "hi": [
+                "greeting"
+              ],
+              "how": [
+                "greeting"
+              ],
+              "you": [
+                "greeting",
+                "personal",
+                "education",
+                "skills",
+                "experience"
+              ],
+              "hey": [
+                "greeting"
+              ],
+              "good": [
+                "greeting"
+              ],
+              "morn": [
+                "greeting"
+              ],
+              "afternoon": [
+                "greeting"
+              ],
+              "day": [
+                "greeting"
+              ],
+              "name": [
+                "personal"
+              ],
+              "what": [
+                "personal",
+                "education",
+                "skills",
+                "experience"
+              ],
+              "is": [
+                "personal",
+                "education",
+                "skills",
+                "experience"
+              ],
+              "your": [
+                "personal",
+                "education",
+                "skills",
+                "experience"
+              ],
+              "about": [
+                "personal",
+                "education",
+                "skills",
+                "experience"
+              ],
+              "who": [
+                "personal"
+              ],
+              "are": [
+                "personal",
+                "skills"
+              ],
+              "i": [
+                "personal",
+                "education"
+              ],
+              "can": [
+                "personal"
+              ],
+              "call": [
+                "personal"
+              ],
+              "with": [
+                "personal"
+              ],
+              "educ": [
+                "education"
+              ],
+              "may": [
+                "education"
+              ],
+              "know": [
+                "education",
+                "skills"
+              ],
+              "studi": [
+                "education"
+              ],
+              "did": [
+                "education"
+              ],
+              "skill": [
+                "skills"
+              ],
+              "experti": [
+                "skills"
+              ],
+              "do": [
+                "skills"
+              ],
+              "tech": [
+                "skills",
+                "experience"
+              ],
+              "technolog": [
+                "skills"
+              ],
+              "hand": [
+                "skills"
+              ],
+              "on": [
+                "skills"
+              ],
+              "techno": [
+                "skills"
+              ],
+              "work": [
+                "skills",
+                "experience"
+              ],
+              "tell": [
+                "skills",
+                "experience"
+              ],
+              "me": [
+                "skills",
+                "experience"
+              ],
+              "which": [
+                "skills"
+              ],
+              "experi": [
+                "experience"
+              ],
+              "domain": [
+                "experience"
+              ],
+              "where": [
+                "experience"
+              ],
+              "exp": [
+                "experience"
+              ],
+              "all": [
+                "experience"
+              ],
+              "compani": [
+                "experience"
+              ],
+              "industri": [
+                "experience"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "hello",
+                "hi",
+                "how",
+                "you",
+                "hey",
+                "good",
+                "morn",
+                "afternoon",
+                "day",
+                "name",
+                "what",
+                "is",
+                "your",
+                "about",
+                "who",
+                "are",
+                "i",
+                "can",
+                "call",
+                "with",
+                "educ",
+                "may",
+                "know",
+                "studi",
+                "did",
+                "skill",
+                "experti",
+                "do",
+                "tech",
+                "technolog",
+                "hand",
+                "on",
+                "techno",
+                "work",
+                "tell",
+                "me",
+                "which",
+                "experi",
+                "domain",
+                "where",
+                "exp",
+                "all",
+                "compani",
+                "industri"
+              ],
+              "intents": [
+                "greeting",
+                "personal",
+                "education",
+                "skills",
+                "experience"
+              ],
+              "perceptrons": [
+                [
+                  10.200187683105469,
+                  10.200186729431152,
+                  10.291401863098145,
+                  -0.09121296554803848,
+                  10.200185775756836,
+                  7.650139808654785,
+                  2.550051212310791,
+                  2.550049304962158,
+                  2.5500495433807373,
+                  -4.0896477699279785,
+                  -2.7478625774383545,
+                  -0.7619979381561279,
+                  -2.9251251220703125,
+                  -1.6498428583145142,
+                  -1.1565837860107422,
+                  -3.994309902191162,
+                  -1.0949151515960693,
+                  -0.9678754806518555,
+                  -0.9678754806518555,
+                  -0.9678754806518555,
+                  -4.085568428039551,
+                  -0.08657516539096832,
+                  -0.6878964900970459,
+                  -4.085529327392578,
+                  -1.246475100517273,
+                  -0.07043012976646423,
+                  0,
+                  -0.5608563423156738,
+                  -1.628308892250061,
+                  -1.1780128479003906,
+                  -1.0211410522460938,
+                  -1.4370559453964233,
+                  -4.085521221160889,
+                  -2.205113649368286,
+                  -1.172234296798706,
+                  -1.172234296798706,
+                  -0.31908681988716125,
+                  -4.085521221160889,
+                  -4.085521221160889,
+                  -1.7891982793807983,
+                  -4.0855207443237305,
+                  0,
+                  -0.7019145488739014,
+                  -0.5706011056900024,
+                  4.0855237849750585
+                ],
+                [
+                  -0.8559316992759705,
+                  -0.8558884263038635,
+                  -3.795771598815918,
+                  2.2838428020477295,
+                  -0.8558447360992432,
+                  -0.6424624919891357,
+                  -0.21417231857776642,
+                  -0.21414349973201752,
+                  -0.2141144871711731,
+                  13.392297744750977,
+                  -0.1825181096792221,
+                  1.2093987464904785,
+                  -1.0832254886627197,
+                  -2.049514055252075,
+                  0.056490227580070496,
+                  11.09910774230957,
+                  2.3808228969573975,
+                  2.920581340789795,
+                  2.920581340789795,
+                  2.920581340789795,
+                  -2.556774139404297,
+                  -0.4806051254272461,
+                  -1.7477200031280518,
+                  -1.3290965557098389,
+                  -2.9479587078094482,
+                  -1.1775542497634888,
+                  -0.9915785193443298,
+                  -1.2079616785049438,
+                  -4.776974201202393,
+                  -1.0397108793258667,
+                  -4.2626729011535645,
+                  -5.0095720291137695,
+                  -0.8563168048858643,
+                  -2.491281747817993,
+                  -2.013219118118286,
+                  -2.013219118118286,
+                  -0.4333833158016205,
+                  -0.8693327307701111,
+                  -0.8560465574264526,
+                  -1.5655851364135742,
+                  -0.8562764525413513,
+                  -0.16999423503875732,
+                  -0.2944130301475525,
+                  -0.11322098970413208,
+                  0.8569682417109011
+                ],
+                [
+                  -1.4535324573516846,
+                  -1.4534950256347656,
+                  -1.638508677482605,
+                  0.11696095764636993,
+                  -1.4534432888031006,
+                  -1.099449634552002,
+                  -0.3802701234817505,
+                  -0.3576751947402954,
+                  -0.354197233915329,
+                  -2.8615362644195557,
+                  2.334054946899414,
+                  -2.3542122840881348,
+                  0.014477264136075974,
+                  -1.0390926599502563,
+                  -0.40653449296951294,
+                  -1.6304755210876465,
+                  0.7283403873443604,
+                  -0.7657417058944702,
+                  -0.7657417058944702,
+                  -0.7657417058944702,
+                  12.839803695678711,
+                  1.4940829277038574,
+                  -1.2033077478408813,
+                  12.827589988708496,
+                  10.384283065795898,
+                  -2.7694363594055176,
+                  -2.7012929916381836,
+                  -2.697434902191162,
+                  -2.820343017578125,
+                  -2.2864396572113037,
+                  -0.314852237701416,
+                  -0.584928572177887,
+                  -1.453657865524292,
+                  -1.776698112487793,
+                  -0.9580994844436646,
+                  -0.9580994844436646,
+                  -0.056699592620134354,
+                  -2.364478826522827,
+                  -1.453600287437439,
+                  -0.5049407482147217,
+                  -1.453601360321045,
+                  -1.0334224700927734,
+                  -1.093538522720337,
+                  -0.04772480949759483,
+                  1.45028520064879
+                ],
+                [
+                  -1.9204890727996826,
+                  -1.9183839559555054,
+                  -0.931145191192627,
+                  -1.807029366493225,
+                  -1.9161608219146729,
+                  -1.473786473274231,
+                  -0.5141326189041138,
+                  -0.48727768659591675,
+                  -0.46506860852241516,
+                  -6.252604007720947,
+                  2.3046698570251465,
+                  -2.3069748878479004,
+                  4.004068851470947,
+                  0.2871532440185547,
+                  -0.5755001902580261,
+                  -0.5015051960945129,
+                  -2.2737550735473633,
+                  -0.13284745812416077,
+                  -0.13284745812416077,
+                  -0.13284745812416077,
+                  -6.657442569732666,
+                  -2.1102757453918457,
+                  4.925829887390137,
+                  -5.845544338226318,
+                  -2.5536084175109863,
+                  8.464348793029785,
+                  8.458910942077637,
+                  7.036078929901123,
+                  8.456193923950195,
+                  8.464956283569336,
+                  0.49206700921058655,
+                  3.5149590969085693,
+                  12.459362983703613,
+                  -0.007100366987287998,
+                  -0.1493774801492691,
+                  -0.1493774801492691,
+                  2.291497230529785,
+                  -7.519411563873291,
+                  -5.529798984527588,
+                  -1.2786469459533691,
+                  -1.9318441152572632,
+                  -1.6158415079116821,
+                  -2.762068033218384,
+                  0,
+                  1.824793466516983
+                ],
+                [
+                  -6.539671421051025,
+                  -6.533890247344971,
+                  -6.6638994216918945,
+                  0.07089491933584213,
+                  -6.52464485168457,
+                  -4.978776454925537,
+                  -1.6620328426361084,
+                  -1.6578283309936523,
+                  -1.6536144018173218,
+                  -6.6370720863342285,
+                  -2.0433056354522705,
+                  3.707814931869507,
+                  -3.6192400455474854,
+                  -0.21902135014533997,
+                  -1.233120083808899,
+                  -6.641067028045654,
+                  -1.8609932661056519,
+                  -1.618477463722229,
+                  -1.618477463722229,
+                  -1.618477463722229,
+                  -6.504436492919922,
+                  -0.1728259027004242,
+                  -2.4324569702148438,
+                  -6.498571395874023,
+                  -4.610724449157715,
+                  -10.08961009979248,
+                  -4.549729347229004,
+                  -2.18994140625,
+                  -3.004481077194214,
+                  -10.041413307189941,
+                  -0.06297007948160172,
+                  -5.610200881958008,
+                  -6.484151363372803,
+                  3.1462109088897705,
+                  3.7689688205718994,
+                  3.7689688205718994,
+                  -0.8877773284912109,
+                  6.827727317810059,
+                  3.8659136295318604,
+                  4.487842559814453,
+                  7.864768981933594,
+                  4.186246395111084,
+                  2.3654258251190186,
+                  0.857183575630188,
+                  6.69812489649297
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "how you"
+      ],
+      [
+        "en",
+        "hey"
+      ],
+      [
+        "en",
+        "good morning"
+      ],
+      [
+        "en",
+        "good afternoon"
+      ],
+      [
+        "en",
+        "good day"
+      ],
+      [
+        "en",
+        "name"
+      ],
+      [
+        "en",
+        "what is your name"
+      ],
+      [
+        "en",
+        "your name is"
+      ],
+      [
+        "en",
+        "what about you name"
+      ],
+      [
+        "en",
+        "who are you"
+      ],
+      [
+        "en",
+        "I can call you with"
+      ],
+      [
+        "en",
+        "you are"
+      ],
+      [
+        "en",
+        "what is your education?"
+      ],
+      [
+        "en",
+        "what is your education"
+      ],
+      [
+        "en",
+        "education"
+      ],
+      [
+        "en",
+        "may I know about your education"
+      ],
+      [
+        "en",
+        "your study"
+      ],
+      [
+        "en",
+        "study"
+      ],
+      [
+        "en",
+        "what you did"
+      ],
+      [
+        "en",
+        "what is your skills?"
+      ],
+      [
+        "en",
+        "what is your experties"
+      ],
+      [
+        "en",
+        "what do you know"
+      ],
+      [
+        "en",
+        "your tech"
+      ],
+      [
+        "en",
+        "your technology"
+      ],
+      [
+        "en",
+        "what tech you are hands on"
+      ],
+      [
+        "en",
+        "techno"
+      ],
+      [
+        "en",
+        "what is your tech?"
+      ],
+      [
+        "en",
+        "on what tech you worked on"
+      ],
+      [
+        "en",
+        "tell me about your skills"
+      ],
+      [
+        "en",
+        "tell me about your technology"
+      ],
+      [
+        "en",
+        "you worked on which technology"
+      ],
+      [
+        "en",
+        "on what tech you worked on"
+      ],
+      [
+        "en",
+        "hands on tech"
+      ],
+      [
+        "en",
+        "what is your experience?"
+      ],
+      [
+        "en",
+        "what is your domain experience"
+      ],
+      [
+        "en",
+        "Where you worked"
+      ],
+      [
+        "en",
+        "tell me about you"
+      ],
+      [
+        "en",
+        "your domain experience"
+      ],
+      [
+        "en",
+        "domain experience"
+      ],
+      [
+        "en",
+        "experience"
+      ],
+      [
+        "en",
+        "exp"
+      ],
+      [
+        "en",
+        "what all companies you worked"
+      ],
+      [
+        "en",
+        "company experience"
+      ],
+      [
+        "en",
+        "domain"
+      ],
+      [
+        "en",
+        "tell me your domain"
+      ],
+      [
+        "en",
+        "industry experience"
+      ],
+      [
+        "en",
+        "tech company experience"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "greeting": [
+          {
+            "answer": "Hi!"
+          },
+          {
+            "answer": "Hey there!"
+          },
+          {
+            "answer": "Hello!"
+          },
+          {
+            "answer": "Hi, Watsup!"
+          }
+        ],
+        "personal": [
+          {
+            "answer": "My name is Rohit Jangid!"
+          },
+          {
+            "answer": "Rohit Jangid"
+          },
+          {
+            "answer": "I am Rohit Jangid"
+          },
+          {
+            "answer": "This is Rohit Jangid!"
+          },
+          {
+            "answer": "Rohit here"
+          }
+        ],
+        "skills": [
+          {
+            "answer": "I have experience with a variety of software and systems, including React, Redux, Node, Angular, Mongo Db and all other javascript libraries. I’m also expanding my expertise in Python and ML & AI using javascript."
+          },
+          {
+            "answer": "I am skilled in React, Redux, Angular, Node and Other javascript libraries."
+          }
+        ],
+        "education": [
+          {
+            "answer": "I hold a B. Tech in Computer Science from Jecrc-UDML college of engineering, where I develop a strong foundation in programming and networking. "
+          },
+          {
+            "answer": "My education not only provided me technical skills, but also honed my problem-solving and project management abilities, which I apply daily in my work."
+          }
+        ],
+        "experience": [
+          {
+            "answer": "I  am currently working as a Staff Engineer at Radisys, where I manage a variety of IT systems and solutions, focusing on software development, system design and Tech lead area."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
