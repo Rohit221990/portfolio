@@ -46,13 +46,7 @@ class Server {
     );
 
     this.app.get(`${serverConfig.preRoute}`, (req, res) => {
-      const filePath = path.join(__dirname, "build", "index.html");
-      fs.readFile(filePath, "utf8", (err, data) => {
-        if (err) {
-          return res.status(500).json({ error: "Could not read index.html" });
-        }
-        res.json(JSON.parse(data));
-      });
+      res.sendFile(path.join(__dirname, "build", "index.html"));
     });
 
     this.app.get(`${serverConfig.preRoute}serverConfig`, (req, res) => {
