@@ -49,7 +49,7 @@ class Server {
       const filePath = path.join(__dirname, "build", "index.html");
       fs.readFile(filePath, "utf8", (err, data) => {
         if (err) {
-          return res.status(500).json({ error: "Could not read config file" });
+          return res.status(500).json({ error: "Could not read index.html" });
         }
         res.json(JSON.parse(data));
       });
