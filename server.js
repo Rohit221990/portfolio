@@ -46,11 +46,11 @@ class Server {
     );
 
     this.app.get(`${serverConfig.preRoute}`, (req, res) => {
-      res.sendFile(path.json(__dirname, "build", "index.html"));
+      res.sendFile(path.join(__dirname, "build", "index.html"));
     });
 
     this.app.get(`${serverConfig.preRoute}serverConfig`, (req, res) => {
-      res.sendFile(path.json(__dirname, "serverConfig.json"));
+      res.sendFile(path.join(__dirname, "serverConfig.json"));
     });
   }
 
