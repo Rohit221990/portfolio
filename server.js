@@ -46,12 +46,28 @@ class Server {
     );
 
     this.app.get(`${serverConfig.preRoute}`, (req, res) => {
-      res.sendFile(path.json(__dirname, "build", "index.html"));
+      const filePath = path.join(__dirname, "build", "index.html");
+      fs.readFile(filePath, "utf8", (err, data) => {
+        if (err) {
+          return res.status(500).json({ error: "Could not read config file" });
+        }
+        res.json(JSON.parse(data));
+      });
     });
 
     this.app.get(`${serverConfig.preRoute}serverConfig`, (req, res) => {
-      res.sendFile(path.json(__dirname, "serverConfig.json"));
+      const filePath = path.join(__dirname, "serverConfig.json");
+      fs.readFile(filePath, "utf8", (err, data) => {
+        if (err) {
+          return res.status(500).json({ error: "Could not read config file" });
+        }
+        res.json(JSON.parse(data));
+      });
     });
+
+    // this.app.get(`${serverConfig.preRoute}serverConfig`, (req, res) => {
+    //   res.sendFile(path.json(__dirname, "serverConfig.json"));
+    // });
   }
 
   includeRoutes() {
