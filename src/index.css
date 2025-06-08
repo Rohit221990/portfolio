@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Agustina Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Agustina Regular"),
+    url("./assests/fonts/Agustina.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./assests/fonts/Montserrat-Regular.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Google Sans Bold";
+  src: local("Google Sans Bold"),
+    url("./assests/fonts/GoogleSans-Bold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Google Sans Bold Italic";
+  src: local("Google Sans Bold Italic"),
+    url("./assests/fonts/GoogleSans-BoldItalic.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Google Sans Italic";
+  src: local("Google Sans Italic"),
+    url("./assests/fonts/GoogleSans-Italic.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Google Sans Medium";
+  src: local("Google Sans Medium"),
+    url("./assests/fonts/GoogleSans-Medium.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Google Sans Medium Italic";
+  src: local("Google Sans Medium Italic"),
+    url("./assests/fonts/GoogleSans-MediumItalic.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Google Sans Regular";
+  src: local("Google Sans Regular"),
+    url("./assests/fonts/GoogleSans-Regular.ttf") format("woff");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.chatdiv {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #d4e2e8;
+  border-radius: 10px;
+}
+
+.USdtg {
+  padding: 8px !important;
+}
+
+.rsc-ts-bubble table tr th {
+  float: left !important;
+}
+
+.chatIcon {
+  position: fixed;
+  bottom: 1%;
+  right: 48%;
+  width: 10%;
+  background-color: currentcolor;
+  border-radius: 50%;
+  width: 5%;
+  height: 10%;
+  z-index: 1;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.headerDiv {
+  display: flex;
+  height: 50px;
+  padding-left: 10px;
+  background: #94bbef;
+}
+
+.boxclose {
+  cursor: pointer;
+  font-size: 31px;
+  display: inline-block;
+  line-height: 0;
+  padding: 22px 10px;
+  border: 0;
+  background: none;
+  position: absolute;
+  right: 0;
+}
+
+.boxclose:before {
+  content: "×";
+}
+
+.fnfXOn {
+  background: rgba(14, 107, 168, 0.467);
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  html,
+  body {
+    font-size: 16px;
+    line-height: normal;
+  }
+}
