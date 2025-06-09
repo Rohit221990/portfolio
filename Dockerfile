@@ -15,7 +15,7 @@ RUN npm build
 #react-scripts@3.4.1 -g --silent
 
 # add app
-COPY . ./
+COPY . .
 
 # start app
 CMD ["node", "server.js"]
