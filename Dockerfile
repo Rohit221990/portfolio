@@ -9,15 +9,17 @@ ENV PATH /app/node_modules/.bin:$PATH
 # install app dependencies
 COPY package.json ./
 COPY package-lock.json ./
+
 RUN npm install --silent
 RUN npm install
-RUN npm build
+
+copy . .
+
+RUN npm run build
+
+CMD ["npm", "start"]
+
 #react-scripts@3.4.1 -g --silent
 
-# add app
-COPY . .
-
-# start app
-CMD ["node", "server.js"]
 # Expose the port the app runs on
 EXPOSE 3000
