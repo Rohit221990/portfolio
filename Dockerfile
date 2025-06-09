@@ -15,8 +15,6 @@ RUN npm install
 
 copy . .
 
-RUN npm build
-
 CMD ["npm", "start"]
 
 #react-scripts@3.4.1 -g --silent
