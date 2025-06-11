@@ -17,6 +17,8 @@ copy . .
 
 CMD ["npm", "start"]
 
+RUN ls -la /app
+
 #react-scripts@3.4.1 -g --silent
 
 # Expose the port the app runs on
