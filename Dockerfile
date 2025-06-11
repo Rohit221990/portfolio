@@ -15,8 +15,6 @@ RUN npm install
 
 RUN react-scripts --openssl-legacy-provider build
 
-copy build ./
-
 copy . ./
 
 CMD ["node", "server.js"]
