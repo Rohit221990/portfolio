@@ -13,11 +13,11 @@ COPY package-lock.json ./
 RUN npm install --silent
 RUN npm install
 
-copy build ./
-
 copy . ./
 
 CMD ["npm", "start"]
+
+copy build ./
 
 RUN ls -la /app
 
