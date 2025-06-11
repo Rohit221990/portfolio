@@ -19,7 +19,7 @@ RUN npm run build
 RUN ls -la /app
 RUN ls -la
 
-docker build --no-cache -t my-app .
+RUN docker build -t my-app .
 #react-scripts@3.4.1 -g --silent
 
 # Expose the port the app runs on
