@@ -13,7 +13,7 @@ COPY package-lock.json ./
 RUN npm install --silent
 RUN npm install
 
-RUN react-scripts --openssl-legacy-provider build
+RUN npm build
 
 copy . ./
 
