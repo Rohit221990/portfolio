@@ -16,8 +16,6 @@ COPY . .
 
 RUN npm build
 
-CMD ["node", "server.js"]
-
 RUN ls -la /app
 RUN ls -la
 
@@ -25,3 +23,10 @@ RUN ls -la
 
 # Expose the port the app runs on
 EXPOSE 3000
+
+CMD ["node", "server.js"]
+
+COPY build/ /usr/share/nginx/html/
+
+docker build -t my-app .
+docker run -d -p 3000:80 my-app
