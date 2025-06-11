@@ -1,4 +1,4 @@
-FROM node:13.12.0-alpine
+FROM node:18
 
 # set working directory
 WORKDIR /app
@@ -13,9 +13,9 @@ COPY package-lock.json ./
 RUN npm install --silent
 RUN npm install
 
-RUN npm build
+COPY . .
 
-copy . ./
+RUN npm run build
 
 CMD ["node", "server.js"]
 
