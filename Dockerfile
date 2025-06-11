@@ -27,6 +27,3 @@ EXPOSE 3000
 CMD ["node", "server.js"]
 
 COPY build/ /usr/share/nginx/html/
-
-docker build -t my-app .
-docker run -d -p 3000:80 my-app
