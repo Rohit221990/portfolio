@@ -20,6 +20,7 @@ copy . ./
 CMD ["node", "server.js"]
 
 RUN ls -la /app
+RUN ls -la
 
 #react-scripts@3.4.1 -g --silent
 
