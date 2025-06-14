@@ -14,12 +14,9 @@ RUN npm install
 
 COPY . .
 
-RUN npm build
-
-RUN sleep 60 && echo "Delayed for 1 minute"
-
 RUN ls -la /app
 RUN ls -la
+
 #react-scripts@3.4.1 -g --silent
 
 # Expose the port the app runs on
