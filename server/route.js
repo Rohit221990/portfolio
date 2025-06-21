@@ -102,17 +102,17 @@ class Route {
     manager.addAnswer(
       "en",
       "skills",
-      "I have experience with a variety of software and systems, including React, Redux, Node, Angular, Mongo Db and all other javascript libraries. I’m also expanding my expertise in Python and ML & AI using javascript."
+      "I possess strong proficiency in modern JavaScript technologies, including React, Redux, Angular, and Node.js, along with extensive experience working with a variety of supporting libraries and frameworks to develop scalable and maintainable web applications."
     );
     manager.addAnswer(
       "en",
       "skills",
-      "I am skilled in React, Redux, Angular, Node and Other javascript libraries."
+      "I am proficient in React, Redux, Angular, Node.js, and other modern JavaScript libraries and frameworks, with a strong focus on building scalable, high-performance web applications.I am skilled in React, Redux, Angular, Node and Other javascript libraries."
     );
     manager.addAnswer(
       "en",
       "skills",
-      "I am skilled in React, Redux, Angular, Node and Other javascript libraries."
+      "I have strong expertise in front-end and full-stack development, with hands-on experience in technologies such as React, Redux, Angular, Node.js, and various modern JavaScript libraries and frameworks."
     );
 
     //Add Answers education
@@ -120,19 +120,19 @@ class Route {
     manager.addAnswer(
       "en",
       "education",
-      "I hold a B. Tech in Computer Science from Jecrc-UDML college of engineering, where I develop a strong foundation in programming and networking. "
+      "I am a Staff Engineer at Radisys, where I lead the design, development, and delivery of robust IT systems and software solutions. With a strong focus on system architecture and technical leadership, I drive innovation and efficiency across projects. I hold a B.Tech in Computer Science from JECRC UDML College of Engineering, where I built a solid foundation in programming, networking, and core engineering principles. My academic background, combined with hands-on experience, has equipped me with strong problem-solving and project management skills that I apply consistently in high-impact, real-world environments."
     );
     manager.addAnswer(
       "en",
       "education",
-      "My education not only provided me technical skills, but also honed my problem-solving and project management abilities, which I apply daily in my work."
+      "My education equipped me not only with strong technical skills but also sharpened my problem-solving and project management abilities—skills I consistently apply in my day-to-day work."
     );
     //Add Answers experience
 
     manager.addAnswer(
       "en",
       "experience",
-      "I  am currently working as a Staff Engineer at Radisys, where I manage a variety of IT systems and solutions, focusing on software development, system design and Tech lead area."
+      "I am currently working as a Staff Engineer at Radisys, where I lead and manage diverse IT systems and solutions. My primary focus lies in software development, system architecture, and technical leadership, ensuring the delivery of scalable and high-performing technology solutions."
     );
 
     manager.train().then(async () => {

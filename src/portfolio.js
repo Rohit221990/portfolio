@@ -9,11 +9,11 @@ const settings = {
 const seo = {
   title: "Rohit's Portfolio",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "A passionate professional dedicated to building end-to-end products that contribute to sustainable, scalable social and technical systems—driven by a desire to create meaningful and lasting impact.",
   og: {
     title: "Rohit Jangid Portfolio",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "http://therohitjangid.in/",
   },
 };
 
@@ -22,7 +22,7 @@ const greeting = {
   title: "Rohit Jangid",
   logo_name: "Rohit Jangid",
   subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "A passionate professional dedicated to building end-to-end products that contribute to sustainable, scalable social and technical systems—driven by a desire to create meaningful and lasting impact.",
   resumeLink: "",
   portfolio_repository: "https://github.com/Rohit221990/masterPortfolio",
   githubProfile: "https://github.com/Rohit221990?tab=repositories",
@@ -423,7 +423,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work & Domain",
   description:
-    "I have worked with multiple domains in IT Industry like HeathCare, Insurance, Retail and Telecom as software developer. I lov to explore the industry and understand the business",
+    "I have worked across multiple domains in the IT industry—including healthcare, insurance, retail, and telecom—in the role of a software developer. I enjoy exploring diverse sectors to gain deeper insights into industry dynamics and understand the business needs that drive technology solutions.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -438,7 +438,7 @@ const experience = {
           duration: "Oct2013 - FEB 2016",
           location: "Bangalore, Karnataka",
           description:
-            "I was working on Health care domain, where I was developing a automate tool to calculate patient data and done some health related analysis then after deliver to Doctor. I have worked on HL7(Patient data format) and CCD.",
+            "I worked in the healthcare domain, where I developed an automated tool for processing and analyzing patient data to assist doctors in making informed clinical decisions. My responsibilities included implementing health-related data analysis workflows and ensuring accurate delivery of results to healthcare professionals. I also gained hands-on experience with healthcare data standards such as HL7 and CCD (Continuity of Care Document).",
           color: "#0879bf",
         },
         {
@@ -449,7 +449,7 @@ const experience = {
           duration: "May 2016 - Jul 2018",
           location: "Bangalore, Karnataka",
           description:
-            "I have worked with Health care domain and the Role was to handle Patient Portal using Ruby and Rails, Also handled the chat bot end-to-end implementation. Developed API using node and implement routing on RabbitMQ",
+            "I have experience working in the healthcare domain, where I was responsible for managing and enhancing a Patient Portal built with Ruby on Rails. I also led the end-to-end implementation of a chatbot to improve patient engagement and support. Additionally, I developed APIs using Node.js and implemented message routing using RabbitMQ to ensure efficient and scalable communication across services.",
           color: "#9b1578",
         },
         {
@@ -460,7 +460,7 @@ const experience = {
           duration: "Jul 2018 - Jul 2019",
           location: "Bangalore, Karnataka",
           description:
-            "I have worked with title insurance domain, where handled all the property tansaction using hyperledger(Framework) Block chain(Mutual Indemnity Blockchain). Manage all the policies in UI as well as Server side of particular property. Setup IPFS servers and manage swarm connect and clustering between the IPFS nodes.",
+            "I have worked in the title insurance domain, where I managed end-to-end property transactions using Hyperledger-based blockchain solutions, specifically within the Mutual Indemnity Blockchain framework. My responsibilities included handling policy data on both the UI and server side for individual properties. Additionally, I set up and managed IPFS (InterPlanetary File System) servers, establishing swarm connections and clustering between IPFS nodes to ensure secure and decentralized data storage and sharing.",
           color: "#fc1f20",
         },
         {
@@ -471,20 +471,20 @@ const experience = {
           duration: "Jul 2019 - Nov 2020",
           location: "Bangalore, Karnataka",
           description:
-            "In Retail Domain Have worked with Aptos Product and mostly handled cloud based implementation. Worked on severless tech using AWS and python. Design a local BE server using Node and handling deploymnet using Docker and Kubernetes.",
+            "In the retail domain, I have worked extensively with the Aptos product, primarily focusing on cloud-based implementations. I have hands-on experience with serverless technologies using AWS and Python, enabling scalable and efficient backend services. Additionally, I designed a local backend server using Node.js and managed its deployment using Docker and Kubernetes for containerization and orchestration.",
           color: "#fc1f20",
         },
-        // {
-        //   title: "Lead Software Engineer",
-        //   company: "Radisys Technology(Telecom)",
-        //   company_url: "",
-        //   logo_path: "radisys.png",
-        //   duration: "Nov 2019 - Nov 2020",
-        //   location: "Bangalore, Karnataka",
-        //   description:
-        //     "Radisys is a part of Relience, It enables service providers to become digital experience providers. Providing a end-to-end solution to help service providers build and operate highly scalable, high-performance networks. I have worked on a dashboard portal where Tenant can manage all his services and developed a core of webRTC sdk that can help user to make SIP based calling.",
-        //   color: "#fc1f20",
-        // },
+        {
+          title: "Staff Software Engineer",
+          company: "Radisys Technology(Telecom)",
+          company_url: "",
+          logo_path: "radisys.png",
+          duration: "Nov 2020 - Now",
+          location: "Bangalore, Karnataka",
+          description:
+            "Radisys, a Reliance company, empowers service providers to evolve into digital experience providers by offering end-to-end solutions for building and operating highly scalable, high-performance networks. At Radisys, I worked on developing a dashboard portal that enables tenants to manage their services efficiently. I also contributed to the development of a core WebRTC SDK designed to facilitate SIP-based calling, enhancing real-time communication capabilities for end users.",
+          color: "#fc1f20",
+        },
       ],
     },
   ],
@@ -494,7 +494,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+    "My projects leverage a wide range of modern technology tools and frameworks. I particularly enjoy working on Data Science projects, with my most rewarding experiences involving the development and deployment of these solutions as web applications using cloud infrastructure.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -532,12 +532,12 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "fotor-ai-202306221391.jpg",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you in Full Stack development, Problem Solution and Opensource Development(React, Node, Angular and etc).",
+      "I am active on most major social media platforms and typically respond to messages within 24 hours. I’m open to collaboration and happy to assist with Full Stack Development, problem-solving, and open-source contributions—particularly in technologies like React, Node.js, Angular, and related frameworks.",
   },
   blogSection: {
     title: "Blogs",
     subtitle:
-      "For individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
+      "I am passionate about writing impactful lessons aimed at individual empowerment. My goal is to inspire meaningful personal growth by creating content that resonates deeply and encourages positive transformation at the core level of one’s character.",
     link: "https://hashnode.com/@rohitjangid/",
     avatar_image_path: "blogs_image.svg",
   },
