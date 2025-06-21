@@ -423,7 +423,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work & Domain",
   description:
-    "I have worked across multiple domains in the IT industry—including healthcare, insurance, retail, and telecom—in the role of a software developer. I enjoy exploring diverse sectors to gain deeper insights into industry dynamics and understand the business needs that drive technology solutions.",
+    "I have worked across multiple domains in the IT industry—including healthcare, insurance, retail, and telecom—as a software developer. I thrive on exploring diverse sectors to gain a deeper understanding of industry-specific challenges and to align technology solutions with real business needs. This cross-domain experience has strengthened my ability to design adaptable, impactful software systems.",
   header_image_path: "experience.svg",
   sections: [
     {
